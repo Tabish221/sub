@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import 'globle';
+@import 'header';
+
+/* Main Banner CSS */
+.mainBanner {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+	padding: 120px 0 50px;
+
+	.mainBanner-cont {
+		text-align: center;
+		width: 900px;
+		max-width: 100%;
+		margin: auto;
+		h2 {
+			font-family: 'Causten';
+			font-weight: 700;
+			font-size: 42px;
+			line-height: 1.2;			
+			color: #C6C1B6;			
+			text-shadow: 0px 4px 10.1px rgba(0, 0, 0, 0.25);
+		}
+
+		h1 {
+			font-family: 'Causten';
+			font-weight: 500;
+			font-size: 150px;
+			line-height: 1;
+			letter-spacing: -0.04em;			
+			text-shadow: 0px 4px 10.1px rgba(0, 0, 0, 0.25);
+			background: url('../images/hd-bg.png');
+			background-size: 500vw 100vh;
+			background-position: center;
+			-webkit-background-clip: text;
+			color: transparent;
+			
+		}
+
+		p{
+			font-family: 'Roboto';
+			font-style: normal;
+			font-weight: 500;
+			font-size: 28px;
+			line-height: 1.2;
+			color: #C6C1B6;
+			padding-right: 40px;
+			padding-left: 40px;
+			padding-top: 20px;
+
+			&+p {
+				padding-top: 40px;
+			}
+		}
+
+		.mn-btn {
+			padding-top: 50px;
+		}
+	}
+}
+
+/* Custom CSS Styling */
+
+
