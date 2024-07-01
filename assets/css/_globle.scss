@@ -11,8 +11,7 @@
 [class^="box-"]{display:none}
 [class^="box-"].showfirst{display:block}
 
-
-body{font-family:'Montserrat',sans-serif;overflow-x:hidden;font-size:16px;line-height:1;color:#000000;}
+body{font-family:'Montserrat',sans-serif;overflow-x:hidden;font-size:16px;line-height:1;color:#000000;background: linear-gradient(178.69deg, #04140A 8.67%, #161C0F 99.87%);}
 h1,
 h2,
 h3,
@@ -52,7 +51,7 @@ select,
 input[type],
 textarea,
 select,
-button{background:transparent;border:none;border-radius:0px;font-family:'Playfair Display',serif;font-weight:400;}
+button{background:transparent;border:none;border-radius:0px;font-weight:400;}
 ::-webkit-input-placeholder{color:#a3a3a3;font-weight:400;}
 ::-moz-placeholder{color:#a3a3a3;font-weight:400;}
 :-ms-input-placeholder{color:#a3a3a3;font-weight:400;}
