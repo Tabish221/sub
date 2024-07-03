@@ -109,7 +109,7 @@ span {
 }
 
 ul.slick-dots {
-  padding: 50px 0 0;
+  padding: 70px 0 0;
   text-align: center;
 }
 
@@ -131,11 +131,11 @@ ul.slick-dots li {
 }
 
 .slick-dots li button {
-  height: 8px;
-  width: 8px;
+  height: 20px;
+  width: 20px;
   border-radius: 50%;
   padding: 0px;
-  background: #d6d6d6;
+  background: #4B6150;
   border: none;
   cursor: pointer;
   font-size: 0px;
@@ -145,9 +145,9 @@ ul.slick-dots li {
 }
 
 .slick-dots li.slick-active button {
-  background: #f3c919;
-  width: 11px;
-  height: 11px;
+  background: #D9D9D9;
+  width: 20px;
+  height: 20px;
 }
 
 span.arrows {
@@ -172,6 +172,40 @@ span.arrows {
 
 span.arrows.next {
   right: 1%;
+}
+
+.slick-arrow {
+  font-size: 0;
+  position: absolute;
+  width: 65px;
+  height: 65px;
+  background: #20271F;
+  right: calc(10% - 80px);
+  left: 0;
+  bottom: -100px;
+  margin: auto;
+  border-radius: 50%;
+  color: #FCC78C;
+  transition: all 0.3s ease-in-out;
+}
+
+.slick-arrow:hover {
+  opacity: 0.6;
+}
+
+.slick-arrow::after {
+  content: "\f061";
+  font-family: "Font Awesome 5";
+  font-size: 22px;
+  font-weight: 900;
+}
+
+.slick-arrow.slick-prev::after {
+  content: "\f060";
+}
+
+.slick-arrow.slick-prev {
+  right: calc(10% + 80px);
 }
 
 .container-fluid {
@@ -234,20 +268,125 @@ button {
   display: block;
 }
 
-.mn-btn a {
-  padding: 18px 36px;
-  background: rgba(0, 0, 0, 0.2);
-  border: 2px solid #B08C63;
-  border-radius: 50px;
-  font-family: "Roboto";
-  font-weight: 400;
-  font-size: 12px;
+.mn-link a {
+  display: inline-flex;
+  align-items: center;
+  gap: 60px;
+  font-weight: 700;
+  font-size: 30px;
   line-height: 1.2;
-  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.mn-link a:hover {
+  color: #DEB972;
+}
+.mn-link.fs19 a {
+  gap: 30px;
+  font-size: 19px;
+}
+
+.mn-hd h4 {
+  font-family: "Causten";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 0.88;
+  text-shadow: 0px 10px 7.1px rgba(0, 0, 0, 0.5);
+  color: transparent;
+  background: url("../images/hd-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-clip: text;
+}
+.mn-hd h5 {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  font-family: "Causten";
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.2;
+  color: #CCCCCC;
+}
+.mn-hd h5 svg {
+  width: 45px;
+  height: auto;
+}
+.mn-hd h6 {
+  font-family: "Causten";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 1;
+  color: #FFFFFF;
+}
+
+.mn-btn a {
+  margin-top: 40px;
+  /* Auto layout */
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 22px 36px 20px;
+  gap: 26px;
+  background: rgba(0, 0, 0, 0.2);
+  border: 2px solid #383838;
+  border-radius: 50px;
+  font-family: "Causten";
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.2;
+  text-transform: capitalize;
   color: #FFFFFF;
 }
 .mn-btn a:hover {
-  background: #B08C63;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.py85 {
+  padding-top: 85px !important;
+  padding-bottom: 85px !important;
+}
+
+.px-5 {
+  padding-right: 5% !important;
+  padding-left: 5% !important;
+}
+
+.px-10 {
+  padding-right: 10% !important;
+  padding-left: 10% !important;
+}
+
+.px-12 {
+  padding-right: 12% !important;
+  padding-left: 12% !important;
+}
+
+.ps-12 {
+  padding-left: 12% !important;
+}
+
+.pe-12 {
+  padding-right: 12% !important;
+}
+
+.bg-none {
+  background-color: transparent !important;
+}
+
+.w-110 {
+  width: 110%;
+}
+
+.row-gap-75 {
+  row-gap: 75px;
+}
+
+.row-gap-35 {
+  row-gap: 35px;
 }
 
 /* header CSS */
@@ -400,7 +539,8 @@ header .main-header .header-action .header-btn a {
   position: relative;
   padding: 120px 0 50px;
 }
-.mainBanner .container, .mainBanner .container-fluid {
+.mainBanner .container,
+.mainBanner .container-fluid {
   position: relative;
 }
 .mainBanner .bannerAfter {
@@ -505,66 +645,6 @@ header .main-header .header-action .header-btn a {
 }
 .mainBanner .mainBanner-cont .mn-btn {
   padding-top: 50px;
-}
-
-.mn-hd h4 {
-  font-family: "Causten";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 80px;
-  line-height: 0.88;
-  text-shadow: 0px 10px 7.1px rgba(0, 0, 0, 0.5);
-  color: transparent;
-  background: url("../images/hd-bg.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  -webkit-background-clip: text;
-}
-.mn-hd h5 {
-  display: flex;
-  align-items: center;
-  gap: 30px;
-  font-family: "Causten";
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 1.2;
-  color: #CCCCCC;
-}
-.mn-hd h5 svg {
-  width: 45px;
-  height: auto;
-}
-.mn-hd h6 {
-  font-family: "Causten";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 80px;
-  line-height: 1;
-  color: #FFFFFF;
-}
-
-.mn-btn a {
-  margin-top: 40px;
-  /* Auto layout */
-  display: inline-flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 22px 36px 20px;
-  gap: 26px;
-  background: rgba(0, 0, 0, 0.2);
-  border: 2px solid #383838;
-  border-radius: 50px;
-  font-family: "Causten";
-  font-weight: 700;
-  font-size: 22px;
-  line-height: 1.2;
-  text-transform: capitalize;
-  color: #FFFFFF;
-}
-.mn-btn a:hover {
-  background: rgba(0, 0, 0, 0.7);
 }
 
 .section1 {
@@ -885,36 +965,48 @@ header .main-header .header-action .header-btn a {
 .newsSection .newsSec-hd h4 {
   padding-top: 25px;
 }
-.newsSection .newsSec-card {
+.newsSection .newsSec-btn {
+  padding-top: 70px;
+}
+
+.newsSec-card {
   border-radius: 25px;
   overflow: hidden;
 }
-.newsSection .newsSec-card .cont {
+.newsSec-card .img {
+  font-size: 0;
+}
+.newsSec-card .img img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.newsSec-card .cont {
   background-color: #fff;
   padding: 55px 45px 45px;
 }
-.newsSection .newsSec-card .cont h6 {
+.newsSec-card .cont h6 {
   font-weight: 400;
-  font-size: 55px;
-  line-height: 1.4;
+  font-size: 50px;
+  line-height: 1.2;
   color: #05150B;
   padding-bottom: 30px;
 }
-.newsSection .newsSec-card .cont p {
+.newsSec-card .cont p {
   font-weight: 400;
   font-size: 22px;
   line-height: 1.2;
   color: #05150B;
   padding-bottom: 25px;
 }
-.newsSection .newsSec-card .cont span {
+.newsSec-card .cont span {
   font-weight: 400;
   font-size: 22px;
   line-height: 1.2;
   color: #05150B;
-}
-.newsSection .newsSec-btn {
-  padding-top: 70px;
 }
 
 .contactSection {
@@ -960,7 +1052,9 @@ header .main-header .header-action .header-btn a {
   padding-bottom: 15px;
   display: block;
 }
-.contactSec-main .contactSec-form .contactSec-formFeild input, .contactSec-main .contactSec-form .contactSec-formFeild select, .contactSec-main .contactSec-form .contactSec-formFeild textarea {
+.contactSec-main .contactSec-form .contactSec-formFeild input,
+.contactSec-main .contactSec-form .contactSec-formFeild select,
+.contactSec-main .contactSec-form .contactSec-formFeild textarea {
   width: 100%;
   height: 45px;
   border-bottom: 1px solid #B7B7B7;
@@ -1091,7 +1185,8 @@ footer .footerLink ul li a:hover {
   flex-direction: column;
   gap: 40px;
 }
-.copyright ul li span, .copyright ul li a {
+.copyright ul li span,
+.copyright ul li a {
   text-align: left;
   font-weight: 500;
   font-size: 18px;
@@ -1106,4 +1201,689 @@ footer .footerLink ul li a:hover {
   color: #FFFFFF;
 }
 
-/* Custom CSS Styling *//*# sourceMappingURL=style.css.map */
+.contactBanner {
+  padding: 130px 0 45px;
+}
+.contactBanner .contactBanner-cont {
+  padding-bottom: 65px;
+  padding-right: 12%;
+  padding-left: 12%;
+}
+.contactBanner .contactBanner-cont h4 {
+  padding-bottom: 40px;
+}
+.contactBanner .contactBanner-cont h5 {
+  font-size: 50px;
+  padding-bottom: 140px;
+  color: #DDDDDD;
+}
+.contactBanner .contactBanner-cont select {
+  padding: 19px 32px;
+  background: #FFFFFF;
+  border-radius: 300px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  color: #000000;
+}
+.contactBanner .contactBanner-card {
+  padding: 36px 35px;
+  width: 100%;
+  height: auto;
+  background: #FFFFFF;
+}
+.contactBanner .contactBanner-card h6 {
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 1.2;
+  padding-bottom: 14px;
+}
+.contactBanner .contactBanner-card span {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2;
+  color: #333333;
+  padding-bottom: 22px;
+}
+.contactBanner .contactBanner-card a,
+.contactBanner .contactBanner-card p {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2;
+  color: #333333;
+  margin-bottom: 4px;
+}
+.contactBanner .contactBanner-card a:hover {
+  color: #4B6150;
+}
+.contactBanner .contactBanner-card .linkGroup {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.contactBanner .contactBanner-card .linkGroup a {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2;
+  color: #4B6150;
+}
+.contactBanner .contactBanner-card .linkGroup a:hover {
+  color: #05150B;
+}
+.contactBanner .contactBanner-main {
+  padding-right: 12%;
+  padding-left: 12%;
+}
+
+.teamBanner {
+  min-height: 950px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  text-align: center;
+  padding: 80px 0;
+}
+.teamBanner .teamBanner-cont {
+  padding-right: 5%;
+  padding-left: 5%;
+}
+.teamBanner .teamBanner-cont h4 {
+  font-size: 150px;
+}
+.teamBanner .teamBanner-cont h5 {
+  font-size: 60px;
+}
+
+.teamSection1 {
+  padding: 130px 5%;
+  background-color: #04140A;
+}
+.teamSection1 .teamSec1-hd1 {
+  padding-bottom: 65px;
+}
+.teamSection1 .teamSec1-card .img img {
+  width: 100%;
+  height: auto;
+}
+.teamSection1 .teamSec1-card .cont {
+  padding-top: 45px;
+}
+.teamSection1 .teamSec1-card .cont h6 {
+  font-weight: 400;
+  font-size: 27px;
+  line-height: 1.2;
+  color: #FFFFFF;
+  padding-bottom: 30px;
+}
+.teamSection1 .teamSec1-card .cont p {
+  font-weight: 400;
+  font-size: 17.9675px;
+  line-height: 1.1;
+  color: #AAAAAA;
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+.teamSection1 .teamSec1-card.small .cont h6 {
+  font-size: 20px;
+}
+.teamSection1 .teamSec1-card.small .cont p {
+  font-size: 14px;
+}
+.teamSection1 .teamSec1-main .row {
+  row-gap: 60px;
+}
+.teamSection1 .teamSec1-hd2 {
+  padding: 50px 0;
+}
+.teamSection1 .teamSec1-hd2 h5 {
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 1;
+  color: #C6C1B6;
+  text-shadow: 0px 4px 10.1px rgba(0, 0, 0, 0.25);
+}
+
+.newsBanner {
+  padding: 135px 12% 40px;
+  background-color: #000000;
+}
+.newsBanner label {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1.2;
+  color: #C6C1B6;
+  text-shadow: 0px 4px 10.1px rgba(0, 0, 0, 0.25);
+}
+.newsBanner .newsBannerSearch {
+  position: relative;
+}
+.newsBanner .newsBannerSearch .icon {
+  position: absolute;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+.newsBanner .newsBannerSearch input {
+  width: 100%;
+  padding: 10px 10px 10px 50px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+  border-bottom: 1px solid #F9F9F9;
+}
+
+.newsSection1 {
+  padding: 75px 5%;
+}
+.newsSection1 .newsSec1-left h6 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1.2;
+  color: #C6C1B6;
+  text-shadow: 0px 4px 10.1px rgba(0, 0, 0, 0.25);
+  padding-bottom: 70px;
+}
+.newsSection1 .newsSec1-left ul {
+  display: flex;
+  flex-direction: column;
+}
+.newsSection1 .newsSec1-left ul li {
+  position: relative;
+  padding: 10px 5px 10px 30px;
+}
+.newsSection1 .newsSec1-left ul li::after {
+  content: "";
+  width: 1px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  background-color: #18271E;
+}
+.newsSection1 .newsSec1-left ul li.active::after {
+  width: 2px;
+  background-color: #2B5A3C;
+}
+.newsSection1 .newsSec1-left ul li a {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.2;
+  color: #DDDDDD;
+}
+.newsSection1 .newsSec1-left ul li a:hover {
+  color: #F9F9F9;
+}
+.newsSection1 .newsSec1-right .newsSec1-righHd {
+  padding-bottom: 75px;
+}
+.newsSection1 .newsSec1-row2 {
+  padding-bottom: 35px;
+}
+
+.newsSec1-card1 .cont,
+.newsSec1-card1 .img {
+  height: 100%;
+  font-size: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.newsSec1-card1 .img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.newsSec1-darkCard {
+  border-radius: 30px;
+  overflow: hidden;
+  margin: 45px 0;
+  position: relative;
+}
+.newsSec1-darkCard .img {
+  font-size: 0;
+  height: 100%;
+}
+.newsSec1-darkCard .img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.newsSec1-darkCard .cont {
+  padding: 10px 45px 45px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+}
+.newsSec1-darkCard .cont h6 {
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 1.2;
+  color: #ffffff;
+  padding-bottom: 30px;
+}
+.newsSec1-darkCard .cont h4 {
+  font-size: 80px;
+  padding-bottom: 40px;
+}
+.newsSec1-darkCard .cont p {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.4;
+  color: #cccccc;
+  padding-bottom: 25px;
+}
+.newsSec1-darkCard .cont p b {
+  font-weight: 700;
+  color: #fff;
+}
+.newsSec1-darkCard .cont span {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.2;
+  color: #ffffff;
+}
+.newsSec1-darkCard .cont .mn-link {
+  padding-top: 50px;
+}
+.newsSec1-darkCard .cont .mn-link.fs19 {
+  padding-top: 30px;
+}
+
+.innerBanner {
+  padding: 300px 5% 140px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.innerBanner .innerBanner-cont h5 {
+  color: #C6C1B6;
+  font-size: 42px;
+  padding-bottom: 25px;
+}
+.innerBanner .innerBanner-cont h4 {
+  font-size: 90px;
+  padding-bottom: 35px;
+}
+.innerBanner .innerBanner-cont p {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.6;
+  color: #C6C1B6;
+}
+
+.slgSection1 {
+  padding: 100px 0;
+}
+
+.slgSec1-bottom {
+  padding: 50px 12%;
+}
+.slgSec1-bottom h6 {
+  font-weight: 300;
+  font-size: 80px;
+  line-height: 1.2;
+  color: #4B6150;
+  padding-bottom: 80px;
+}
+.slgSec1-bottom span {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.25;
+  color: #CCCCCC;
+}
+
+.historySection {
+  padding: 100px 0;
+  overflow: hidden;
+}
+.historySection .historySec-hd {
+  padding-bottom: 95px;
+}
+.historySection .historySec-hd h5 {
+  padding-bottom: 25px;
+}
+.historySection .historySec-bottom {
+  padding-left: 5%;
+  width: 110%;
+  padding-bottom: 100px;
+}
+.historySection .historySec-card .img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border-radius: 30px;
+}
+.historySection .historySec-card .cont {
+  padding: 45px 30px 30px;
+}
+.historySection .historySec-card .cont span {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #4B6150;
+  padding-bottom: 25px;
+}
+.historySection .historySec-card .cont h6 {
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 1;
+  color: #EEEEEE;
+  padding-bottom: 50px;
+}
+.historySection .historySec-card .cont p {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: #AAAAAA;
+}
+.historySection .historySec-card .cont p b {
+  font-weight: 700;
+  color: #fff;
+}
+
+.missionSection {
+  padding: 100px 0;
+}
+.missionSection .missionSec-hd {
+  padding-bottom: 160px;
+}
+.missionSection .missionSec-hd h5 {
+  padding-bottom: 36px;
+}
+.missionSection .missionSec-hd p {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.25;
+  color: #DDDDDD;
+  padding-top: 45px;
+}
+
+.missionSec-card .icon {
+  padding-bottom: 60px;
+}
+.missionSec-card .icon span {
+  width: 60px;
+  height: 60px;
+  background: #20271F;
+  padding: 10px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+.missionSec-card .icon span svg {
+  max-width: 100%;
+  max-height: 100%;
+}
+.missionSec-card .cont {
+  padding-right: 40px;
+}
+.missionSec-card h4 {
+  padding-bottom: 60px;
+  font-size: 40px;
+}
+.missionSec-card p {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.75;
+  color: #DDDDDD;
+}
+.missionSec-card .mn-link {
+  padding-top: 25px;
+}
+.missionSec-card .mn-link a {
+  gap: 25px;
+  color: #656565;
+}
+.missionSec-card .mn-link a:hover {
+  color: #FCC78C;
+}
+
+.missionSec-bottom {
+  padding-top: 100px;
+}
+.missionSec-bottom h6 {
+  font-weight: 300;
+  font-size: 80px;
+  line-height: 0.88;
+  color: #4B6150;
+  padding-bottom: 70px;
+}
+.missionSec-bottom p {
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 1.6;
+  color: #CCCCCC;
+}
+.missionSec-bottom p b {
+  font-weight: 700;
+  color: #fff;
+}
+
+.miningSection1 {
+  padding: 100px 0;
+}
+.miningSection1 .miningSec1-hd {
+  padding-bottom: 100px;
+}
+
+.miningSec1-card {
+  border-radius: 30px;
+  overflow: hidden;
+  max-width: 980px;
+}
+.miningSec1-card .img {
+  width: 100%;
+  height: 100%;
+}
+.miningSec1-card .img .img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.miningSec1-card .cont {
+  padding: 40px;
+  background-color: #fff;
+}
+.miningSec1-card .cont h6 {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #05150B;
+  padding-bottom: 30px;
+}
+.miningSec1-card .cont h5 {
+  font-weight: 300;
+  font-size: 60px;
+  line-height: 0.82;
+  color: #05150B;
+  padding-bottom: 35px;
+}
+.miningSec1-card .cont p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #05150B;
+  padding-bottom: 25px;
+}
+.miningSec1-card .cont span {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #05150B;
+}
+
+.miningSection2 {
+  padding-bottom: 110px;
+}
+
+.miningSec3-card {
+  position: relative;
+  border-radius: 30px;
+  overflow: hidden;
+}
+.miningSec3-card .img {
+  width: 100%;
+}
+.miningSec3-card .img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border-radius: 30px;
+}
+.miningSec3-card .missionSec-card {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  width: 100%;
+  padding: 45px;
+}
+.miningSec3-card .missionSec-card h6 {
+  font-size: 30px;
+  padding-bottom: 30px;
+}
+.miningSec3-card .missionSec-card .cont p {
+  font-size: 16px;
+  color: #AAAAAA;
+}
+.miningSec3-card .missionSec-card .cont p b {
+  color: #ffffff;
+}
+
+.aboutSection1 {
+  padding: 70px 0;
+}
+.aboutSection1 .aboutSec1-hd {
+  padding-bottom: 96px;
+}
+.aboutSection1 .aboutSec1-hd h5 {
+  padding-bottom: 40px;
+}
+.aboutSection1 .aboutSec1-cont {
+  padding-bottom: 100px;
+}
+.aboutSection1 .aboutSec1-cont p {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 1.11;
+  color: #CCCCCC;
+}
+.aboutSection1 .aboutSec1-cont p + p {
+  padding-top: 40px;
+}
+.aboutSection1 .aboutSec1-bottomCont h5 {
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 0.88;
+  color: #FFFFFF;
+  padding-bottom: 65px;
+}
+.aboutSection1 .aboutSec1-bottomCont p {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.25;
+  color: #DDDDDD;
+}
+.aboutSection1 .aboutSec1-bottomCont p + p {
+  padding-top: 30px;
+}
+
+.milestoneSection {
+  padding: 70px 0;
+}
+.milestoneSection .milestoneSec-hd {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  justify-content: center;
+}
+.milestoneSection .mileSec-imgCard {
+  position: relative;
+  height: 100%;
+  font-size: 0;
+  border-radius: 30px;
+  overflow: hidden;
+}
+.milestoneSection .mileSec-imgCard img {
+  min-width: 100%;
+  height: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.milestoneSection .mileSec-imgCard span {
+  position: absolute;
+  top: 30px;
+  left: 35px;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #FFFFFF;
+}
+.milestoneSection .mileSec-link {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+.milestoneSection .mileSec-contCard {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: space-between;
+  background: #122312;
+  border-radius: 30px;
+  padding: 50px 45px;
+}
+.milestoneSection .mileSec-contCard h6 {
+  font-weight: 300;
+  font-size: 80px;
+  line-height: 0.88;
+  color: #4B6150;
+}
+.milestoneSection .mileSec-contCard p {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 1.13;
+  color: #FFFFFF;
+}/*# sourceMappingURL=style.css.map */

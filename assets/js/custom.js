@@ -8,32 +8,13 @@ $(document).ready(function() {
         $('body').toggleClass('ovr-hiddn');
     });
 
-    $('.loginUp').click(function(){
-        $('.LoginPopup').fadeIn();
-        $('.overlay').fadeIn();
-    });
-
-    $('.signUp').click(function(){
-        $('.signUpPop').fadeIn();
-        $('.overlay').fadeIn();
-    });
-
-     $('.closePop,.overlay').click(function(){
+    $('.closePop,.overlay').click(function(){
         $('.popupMain').fadeOut();
         $('.overlay').fadeOut();
     });
 
 });
 
-
-// Fancy Media
-$('.fancybox-media').fancybox({
-    openEffect: 'none',
-    closeEffect: 'none',
-    helpers: {
-        media: {}
-    }
-});
 
 
 // Slider For
@@ -52,15 +33,6 @@ $('.slider-nav').slick({
     dots: false,
     focusOnSelect: true
 });
-
-
-// Accordion
-$('.myaccordi>li').click(function() {
-    $(this).addClass('active');
-    $(this).siblings().removeClass('active');
-});
-//  https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_accordion
-
 
 // Sticky Navigation
 $(window).scroll(function() {
@@ -81,7 +53,37 @@ $('.index-slider').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
 });
-            
+
+// historySec-slider
+
+$('.historySec-slider').slick({
+    dots: false,
+    arrows: true,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+});
+
+$('.miningSec-slider').slick({
+    dots: false,
+    arrows: true,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    centerMode: true,
+    variableWidth: true,
+});
+
+$('.miningSec2-slider').slick({
+    dots: true,
+    arrows: false,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+});
 
 // Navigation Menu 
 $(window).on('load', function() {
