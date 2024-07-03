@@ -85,10 +85,8 @@
          <div class="missionSec-hd px-5 mn-hd">
             <h5>
                <div class="icon">
-                  <svg width="29" height="28" viewBox="0 0 29 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                     <path
-                        d="M21.6141 12.2697L12.1228 2.77837L14.6252 0.276001L28.3883 14.0391L14.6252 27.802L12.1228 25.2997L21.6141 15.8086H0.0771484V12.2697H21.6141Z"
-                        fill="#FCC78C" />
+                  <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path d="M21.6139 12.8992L12.1226 3.40788L14.6249 0.905518L28.388 14.6686L14.6249 28.4316L12.1226 25.9292L21.6139 16.4381H0.0769043V12.8992H21.6139Z" fill="#FCC78C"/>
                   </svg>
                </div>
                Mission
@@ -366,7 +364,79 @@
       </div>
    </section>
 
+   <section class="aboutSection2">
+      <div class="container-fluid">
+         <div class="aboutSec2-main ps-5">
+            <div class="aboutSec2-slider">
+               <div class="">
+                  <div class="aboutSec2-card">
+                     <span>2018</span>
+                     <div class="img">
+                        <img src="assets/images/about/img2.png" alt="">
+                     </div>
 
+                     <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+                  </div>
+               </div>
+
+               <div class="">
+                  <div class="aboutSec2-card">
+                     <span>2018</span>
+                     <div class="img">
+                        <img src="assets/images/about/img3.png" alt="">
+                     </div>
+
+                     <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+                  </div>
+               </div>
+
+               <div class="">
+                  <div class="aboutSec2-card">
+                     <span>2018</span>
+                     <div class="img">
+                        <img src="assets/images/about/img4.png" alt="">
+                     </div>
+
+                     <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+                  </div>
+               </div>
+
+               <div class="">
+                  <div class="aboutSec2-card">
+                     <span>2018</span>
+                     <div class="img">
+                        <img src="assets/images/about/img2.png" alt="">
+                     </div>
+
+                     <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+                  </div>
+               </div>
+
+               <div class="">
+                  <div class="aboutSec2-card">
+                     <span>2018</span>
+                     <div class="img">
+                        <img src="assets/images/about/img3.png" alt="">
+                     </div>
+
+                     <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+                  </div>
+               </div>
+
+               <div class="">
+                  <div class="aboutSec2-card">
+                     <span>2018</span>
+                     <div class="img">
+                        <img src="assets/images/about/img4.png" alt="">
+                     </div>
+
+                     <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
 
 
 

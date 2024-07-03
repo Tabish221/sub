@@ -355,6 +355,10 @@ button {
   padding-left: 5% !important;
 }
 
+.ps-5 {
+  padding-left: 5% !important;
+}
+
 .px-10 {
   padding-right: 10% !important;
   padding-left: 10% !important;
@@ -1886,4 +1890,50 @@ footer .footerLink ul li a:hover {
   font-size: 30px;
   line-height: 1.13;
   color: #FFFFFF;
+}
+
+.aboutSection2 {
+  padding: 100px 0;
+}
+.aboutSection2 .aboutSec2-main {
+  width: 120%;
+}
+.aboutSection2 .aboutSec2-card {
+  position: relative;
+  border-radius: 30px;
+  overflow: hidden;
+}
+.aboutSection2 .aboutSec2-card .img {
+  width: 100%;
+  height: 100%;
+}
+.aboutSection2 .aboutSec2-card img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border-radius: 30px;
+}
+.aboutSection2 .aboutSec2-card span {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #FFFFFF;
+  position: absolute;
+  top: 40px;
+  left: 45px;
+}
+.aboutSection2 .aboutSec2-card p {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 1.3;
+  color: #FFFFFF;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 50%;
+  position: absolute;
+  left: 45px;
+  bottom: 55px;
 }/*# sourceMappingURL=style.css.map */

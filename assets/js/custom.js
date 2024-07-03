@@ -85,6 +85,17 @@ $('.miningSec2-slider').slick({
     slidesToScroll: 1,
 });
 
+// aboutSec2-slider
+
+$('.aboutSec2-slider').slick({
+    dots: false,
+    arrows: true,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+});
+
 // Navigation Menu 
 $(window).on('load', function() {
 var currentUrl = window.location.href.substr(window.location.href.lastIndexOf("/") + 1);
