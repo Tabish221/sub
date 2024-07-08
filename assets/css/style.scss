@@ -705,6 +705,12 @@ footer {
         align-items: flex-end;
         gap: 20px;
 
+        form {
+            display: flex;
+            align-items: flex-end;
+            gap: 20px;
+        }
+
         input {
             display: flex;
             flex-direction: row;

@@ -3,7 +3,7 @@
 		<div class="row">
 			<div class="col-md-4">
 				<div class="footerBackBtn">
-					<a href="#">
+					<a href="#backToTop">
 						<div class="icon">
 							<svg width="14" height="8" viewBox="0 0 14 8" fill="none"
 								xmlns="http://www.w3.org/2000/svg">
@@ -16,7 +16,9 @@
 				</div>
 
 				<div class="footerLogo">
-					<img src="assets/images/footer-logo.png" alt="Logo">
+					<a href="./">
+						<img src="assets/images/footer-logo.png" alt="Logo">
+					</a>
 				</div>
 			</div>
 			<div class="col-md-8">
@@ -24,8 +26,10 @@
 					<div class="getTouch-footerForm">
 						<label for="">Get updates on the latest industry trends.</label>
 						<div class="getTouch-footerFormFeild">
-							<input type="text" placeholder="Email Address">
-							<button>OK</button>
+							<form>
+								<input type="text" placeholder="Email Address" require>
+								<button>OK</button>
+							</form>
 						</div>
 					</div>
 
@@ -41,7 +45,7 @@
 						<ul>
 							<li><a href="#">Technologies</a></li>
 							<li><a href="#">Services</a></li>
-							<li><a href="#">About</a></li>
+							<li><a href="about-us.php">About</a></li>
 						</ul>
 					</div>
 				</div>

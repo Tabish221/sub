@@ -1,4 +1,4 @@
-<header>
+<header id="backToTop">
 	<div class="main-header">
 		<div class="container-fluid">
 			<div class="row align-items-center">
@@ -16,8 +16,8 @@
 					<div class="menuWrap">
 						<ul class="menu">
 							<li><a class="active" href="./">HOME</a></li>
-							<li><a href="#">ABOUT SGL</a></li>
-							<li><a href="#">EMPOWERING MINERS</a></li>
+							<li><a href="about-us.php">ABOUT SGL</a></li>
+							<li><a href="empowering-miners.php">EMPOWERING MINERS</a></li>
 						</ul>
 
 						<a href="./" class="logo">
@@ -25,9 +25,9 @@
 						</a>
 
 						<ul class="menu">
-							<li><a class="active" href="./">SGL REFINERY</a></li>
-							<li><a href="#">NEWSROOM</a></li>
-							<li><a href="#">OUR TEAM</a></li>
+							<li><a class="active" href="sgl-refinery.php">SGL REFINERY</a></li>
+							<li><a href="newsroom.php">NEWSROOM</a></li>
+							<li><a href="team.php">OUR TEAM</a></li>
 						</ul>
 					</div>
 				</div>
@@ -42,7 +42,7 @@
 						</div>
 
 						<div class="header-btn">
-							<a href="#">CONTACT US</a>
+							<a href="contact-us.php">CONTACT US</a>
 						</div>
 					</div>
 				</div>   

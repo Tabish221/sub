@@ -1135,6 +1135,11 @@ footer .getTouch-footerFormFeild {
   align-items: flex-end;
   gap: 20px;
 }
+footer .getTouch-footerFormFeild form {
+  display: flex;
+  align-items: flex-end;
+  gap: 20px;
+}
 footer .getTouch-footerFormFeild input {
   display: flex;
   flex-direction: row;
