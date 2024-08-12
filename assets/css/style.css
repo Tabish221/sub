@@ -758,6 +758,10 @@ header .main-header .header-action .header-btn a {
 .aboutSection {
   padding-bottom: 290px;
 }
+.aboutSection.z-index3 {
+  padding-bottom: 360px !important;
+  z-index: 9999;
+}
 .aboutSection .aboutSec-main {
   padding-right: 5%;
   padding-left: 5%;
@@ -766,8 +770,8 @@ header .main-header .header-action .header-btn a {
   padding-bottom: 25px;
 }
 .aboutSection .aboutSec-main .aboutSec-img {
-  margin-top: -250px;
   position: relative;
+  height: 600px;
 }
 .aboutSection .aboutSec-main .aboutSec-contCard {
   position: absolute;
@@ -813,7 +817,7 @@ header .main-header .header-action .header-btn a {
 }
 .aboutSection .aboutSec-main .aboutSec-imgCard.nx4 {
   right: 60px;
-  bottom: 60px;
+  bottom: -120px;
 }
 .aboutSection .aboutSec-main .aboutSec-imgCard.nx3 {
   right: 60px;
@@ -836,6 +840,10 @@ header .main-header .header-action .header-btn a {
   background-size: cover;
   background-position: center;
   padding: 125px 5% 110px;
+  position: relative;
+  z-index: 999;
+  font-size: 0;
+  margin-bottom: -2px;
 }
 .videoSection .videoSec-playBtn {
   text-align: center;
@@ -866,6 +874,9 @@ header .main-header .header-action .header-btn a {
 
 .section2 {
   padding: 100px 0 0 0;
+  position: relative;
+  z-index: 999;
+  background-color: #04140A;
 }
 .section2 .sec2-center {
   text-align: center;

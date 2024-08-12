@@ -262,6 +262,11 @@
     // background-color: #1E1E1E;
     padding-bottom: 290px;
 
+    &.z-index3 {
+        padding-bottom: 360px !important;
+        z-index: 9999;
+    }
+
     .aboutSec-main {
         padding-right: 5%;
         padding-left: 5%;
@@ -273,8 +278,9 @@
         }
 
         .aboutSec-img {
-            margin-top: -250px;
+            // margin-top: -250px;
             position: relative;
+            height: 600px;
         }
 
         .aboutSec-contCard {
@@ -323,7 +329,7 @@
 
             &.nx4 {
                 right: 60px;
-                bottom: 60px;
+                bottom: -120px;
             }
 
             &.nx3 {
@@ -352,6 +358,10 @@
     background-size: cover;
     background-position: center;
     padding: 125px 5% 110px;
+    position: relative;
+    z-index: 999;
+    font-size: 0;
+    margin-bottom: -2px;
 
     .videoSec-playBtn {
         text-align: center;
@@ -388,6 +398,9 @@
 
 .section2 {
     padding: 100px 0 0 0;
+    position: relative;
+    z-index: 999;
+    background-color: #04140A;
 
     .sec2-center {
         text-align: center;
